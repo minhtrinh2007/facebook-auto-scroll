@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Auto Facebook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #4267B2;
+      color: white;
+    }
+
+    .header button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .actions label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button.start {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    button.stop {
+      background-color: #f44336;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span>Advanced Auto Facebook</span>
+    <button id="closePopup">X</button>
+  </div>
+  <div class="content">
+    <form id="actionsForm">
+      <div class="actions">
+        <label><input type="checkbox" id="autoLike" /> Tự động Thích bài viết</label>
+        <label><input type="checkbox" id="autoScroll" /> Tự động Lướt xem bài viết</label>
+        <label><input type="checkbox" id="autoStory" /> Tự động Xem Story</label>
+        <label><input type="checkbox" id="autoMarketplace" /> Tự động Xem Marketplace</label>
+        <label><input type="checkbox" id="autoGroupPosts" /> Tự động Lướt bài viết Nhóm</label>
+        <label><input type="checkbox" id="autoFriends" /> Tự động Xem Danh sách Bạn bè</label>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <button class="start" id="startActions">Bắt đầu</button>
+    <button class="stop" id="stopActions">Kết thúc</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

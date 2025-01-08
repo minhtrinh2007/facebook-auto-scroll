@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Auto Scroll</title>
+</head>
+<body>
+    <script src="background.js"></script>
+    <script src="content.js"></script>
+
+    <script>
+        fetch('cloud-code.json')
+            .then(response => response.json())
+            .then(data => {
+                // Sử dụng dữ liệu từ cloud-code.json
+                console.log(data);
+            });
+    </script>
+</body>
+</html>
